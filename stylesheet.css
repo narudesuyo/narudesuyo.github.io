@@ -1,0 +1,123 @@
+/* Base */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1100px;
+    padding-bottom: 60px;
+}
+
+/* Headings */
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 24px 0 8px;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 6px 0;
+}
+
+/* Links */
+a {
+    color: #1a63b8;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #0f4a8a;
+    text-decoration: underline;
+}
+
+/* Author line */
+h4 sup {
+    font-size: 11px;
+}
+
+/* Publication list on the home page */
+.pub-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    margin: 0 0 28px;
+}
+
+.pub-thumb {
+    flex: 0 0 240px;
+    max-width: 240px;
+}
+
+.pub-thumb img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+
+.pub-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.pub-title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.45;
+    margin: 0 0 4px;
+}
+
+.pub-authors,
+.pub-venue {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 3px;
+}
+
+.pub-venue {
+    color: #555;
+}
+
+.pub-links {
+    font-size: 15px;
+    margin: 4px 0 0;
+}
+
+/* Profile */
+.profile-photo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .pub-item {
+        display: block;
+    }
+
+    .pub-thumb {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+}
