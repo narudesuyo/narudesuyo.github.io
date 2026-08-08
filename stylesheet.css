@@ -68,9 +68,11 @@ p {
     min-width: 0;
 }
 
+/* Sized for a portrait-orientation photo: narrow enough that its height
+   stays close to the bio column beside it. */
 .profile-photo {
-    flex: 0 0 215px;
-    max-width: 215px;
+    flex: 0 0 185px;
+    max-width: 185px;
 }
 
 .profile-photo img {
