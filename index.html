@@ -3,69 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Naru Suzuki</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Naru Suzuki">
     <meta name="description" content="Naru Suzuki is a graduate student at the University of Tokyo working on 3D hand reconstruction and hand-object interaction.">
     <meta property="og:title" content="Naru Suzuki">
     <meta property="og:description" content="Graduate student at the University of Tokyo working on 3D hand reconstruction and hand-object interaction.">
     <meta property="og:url" content="https://narudesuyo.github.io/">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./stylesheet.css?v=20260728">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css?v=20260808">
 </head>
 <body>
-    <div class="container">
-        <div class="row" style="margin-top: 40px;">
-            <div class="col-xs-12">
-                <h1>Naru Suzuki</h1>
-                <p style="font-size: 16px; line-height: 1.7;">
-                    Graduate student at <a href="https://www.u-tokyo.ac.jp/en/">The University of Tokyo</a>.
-                    My research focuses on 3D hand reconstruction and hand-object interaction,
-                    with an interest in using generative priors to resolve ambiguity under occlusion.
-                </p>
-                <p style="font-size: 16px;">
-                    <a href="https://github.com/narudesuyo">GitHub</a>
-                </p>
-            </div>
+<div class="page">
+
+    <!-- ============================= Profile ============================= -->
+    <div class="profile">
+        <div class="profile-bio">
+            <h1 class="site-name">Naru Suzuki</h1>
+            <p>
+                Hi, I'm a graduate student at <a href="https://www.u-tokyo.ac.jp/en/">The University of Tokyo</a>.
+                My research focuses on 3D hand reconstruction and hand-object interaction,
+                with an interest in using generative priors to resolve ambiguity under occlusion.
+            </p>
+            <p class="profile-links">
+                <!-- Add more contact links here as they become available, e.g.
+                E-mail: xxx [at] gmail [dot] com<br>
+                <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://x.com/XXXX">X</a> &nbsp;/&nbsp;
+                -->
+                <a href="https://github.com/narudesuyo">GitHub</a>
+            </p>
         </div>
-
-        <div class="row" style="margin-top: 46px;">
-            <div class="col-xs-12">
-                <h3>Publications</h3>
-
-                <div class="pub-item">
-                    <div class="pub-thumb">
-                        <a href="./projects/26-affhandgen/">
-                            <img src="./projects/26-affhandgen/figs/teaser.png" alt="AffHandGen teaser">
-                        </a>
-                    </div>
-                    <div class="pub-body">
-                        <p class="pub-title">
-                            <a href="./projects/26-affhandgen/">Affordance-Guided Diffusion Prior for 3D Hand Reconstruction</a>
-                        </p>
-                        <p class="pub-authors">
-                            <b>Naru Suzuki</b>*, Takehiko Ohkawa*, Tatsuro Banno, Jihyun Lee, Ryosuke Furuta, Yoichi Sato
-                        </p>
-                        <p class="pub-venue">
-                            European Conference on Computer Vision (ECCV), 2026
-                        </p>
-                        <p class="pub-links">
-                            <a href="./projects/26-affhandgen/">[Project]</a>
-                            <a href="https://arxiv.org/abs/2510.00506">[Paper]</a>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+        <div class="profile-photo">
+            <!-- TODO: replace with a real portrait (e.g. photos/portrait.jpg) -->
+            <img src="./photos/profile-placeholder.svg" alt="Naru Suzuki">
         </div>
-
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:46px auto 0;"><tbody>
-            <tr>
-                <td style="padding:0">
-                    <p style="text-align:right;font-size:small;float:right;">© Naru Suzuki</p>
-                </td>
-            </tr>
-        </tbody></table>
     </div>
-    <script data-goatcounter="https://narudesuyo.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+
+    <!-- ============================== News ============================== -->
+    <section id="news">
+        <h2 class="section-heading">News</h2>
+        <ul class="news-list">
+            <li>
+                <span class="news-date">[Aug 2026]</span>
+                Received the <b>Student Excellence Award</b> at
+                <a href="https://miru-committee.github.io/miru2026/en/">MIRU 2026</a>.
+            </li>
+            <li>
+                <span class="news-date">[2026]</span>
+                <a href="./projects/26-affhandgen/">AffHandGen</a> was accepted to ECCV 2026.
+            </li>
+        </ul>
+    </section>
+
+    <!-- ========================== Publications ========================== -->
+    <section id="publications">
+        <h2 class="section-heading">Publications</h2>
+
+        <div class="pub-item">
+            <div class="pub-thumb">
+                <a href="./projects/26-affhandgen/">
+                    <img src="./projects/26-affhandgen/figs/teaser.png" alt="AffHandGen teaser">
+                </a>
+            </div>
+            <div class="pub-body">
+                <p class="pub-title">
+                    <a href="./projects/26-affhandgen/">Affordance-Guided Diffusion Prior for 3D Hand Reconstruction</a>
+                </p>
+                <p class="pub-authors">
+                    <b>Naru Suzuki</b>*, Takehiko Ohkawa*, Tatsuro Banno, Jihyun Lee, Ryosuke Furuta, Yoichi Sato
+                </p>
+                <p class="pub-venue">
+                    European Conference on Computer Vision (<b>ECCV</b>), 2026
+                </p>
+                <p class="pub-links">
+                    <a href="./projects/26-affhandgen/">[Project]</a> /
+                    <a href="https://arxiv.org/abs/2510.00506">[Paper]</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ======================== Honors &amp; Awards ======================== -->
+    <section id="awards">
+        <h2 class="section-heading">Honors &amp; Awards</h2>
+        <ul class="award-list">
+            <li>MIRU Student Excellence Award, 2026</li>
+        </ul>
+    </section>
+
+    <div class="site-footer">© Naru Suzuki</div>
+
+</div>
+<script data-goatcounter="https://narudesuyo.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
