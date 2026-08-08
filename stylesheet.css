@@ -35,7 +35,8 @@ a:focus {
 .site-name {
     font-size: 32px;
     font-weight: 600;
-    margin: 0;
+    text-align: center;
+    margin: 46px 0 4px;
 }
 
 .section-heading {
@@ -59,7 +60,7 @@ p {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-top: 46px;
+    margin-top: 20px;
 }
 
 .profile-bio {
@@ -193,15 +194,24 @@ p {
 /* ---------------------------------------------------------------
    Honors & Awards
    --------------------------------------------------------------- */
-.award-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.award-entry {
+    margin: 0 0 20px;
 }
 
-.award-list li {
-    margin: 0 0 6px;
-    line-height: 1.6;
+.award-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 2px;
+}
+
+.award-venue,
+.award-date {
+    margin: 0;
+    line-height: 1.55;
+}
+
+.award-venue {
+    color: #555;
 }
 
 /* ---------------------------------------------------------------
