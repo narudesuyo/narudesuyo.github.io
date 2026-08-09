@@ -159,6 +159,12 @@
     <div class="site-footer">© Naru Suzuki</div>
 
 </div>
+<script>
+    // Opening any page with ?skipgc appended stops this browser from being
+    // counted from then on — the same thing GoatCounter's own instructions
+    // ask you to type into the console, reachable on phones too.
+    if (location.search.indexOf('skipgc') !== -1) localStorage.setItem('skipgc', 't');
+</script>
 <script data-goatcounter="https://narudesuyo.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
