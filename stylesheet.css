@@ -186,11 +186,18 @@ p {
     margin: 5px 0 0;
 }
 
-/* Award highlight inside a venue line */
-.award {
+/* Award name inside a venue line. Also used as a link, so it has to beat
+   the generic `a` colour in both states. */
+.award,
+a.award {
     color: #d00;
     font-weight: 700;
     font-style: normal;
+}
+
+a.award:hover,
+a.award:focus {
+    color: #f09228;
 }
 
 /* ---------------------------------------------------------------
